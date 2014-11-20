@@ -1,0 +1,1 @@
+- Set debug nginx in log file: ``` fastcgi_intercept_errors on ```
