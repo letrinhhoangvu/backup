@@ -1,1 +1,1 @@
-- Set debug nginx in log file: ``` fastcgi_intercept_errors on ```
+- Set debug nginx in log file: ``` fastcgi_intercept_errors on ```then check log and Set permisson
