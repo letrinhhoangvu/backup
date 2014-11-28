@@ -1,0 +1,17 @@
+- https://www.drupal.org/project/backstretch module provide set backgroud full page
+- hook_process_page custom logo any page, etc
+- https://www.drupal.org/project/views_merge_rows
+- Render data via single template in module:
+	Used hook_theme defined template then used function call it, for example:
+
+	```
+	function lbi_theme($existing, $type, $theme, $path) {
+	 	 return array(
+	    	 'print_order_template' => array(
+			'template'  => 'templates/print_order',
+			'variables' => array('order' => NULL)
+			)
+		);
+	}
+	print theme('print_order_template', array('order' => $order));
+	```
