@@ -1,0 +1,1 @@
+- Git's crying Patch format detection failed : git apply --whitespace=fix /path/to/0001-My-awesome-change.patch
