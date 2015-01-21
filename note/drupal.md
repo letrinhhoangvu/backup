@@ -16,3 +16,5 @@
 	print theme('print_order_template', array('order' => $order));
 	```
 - [Submit webform programmaticaly Drupal 7:] (http://drupal.stackexchange.com/questions/51826/submit-webform-programmaticaly-drupal-7)
+- Custom view content type admin use modue admin_view
+- Custom views collection  to use module Field Collection views
