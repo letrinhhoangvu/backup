@@ -37,3 +37,21 @@
 	</di>
 
 	```
+- Search all your field collection
+	
+	```
+	/**
+	* search all your field_collection
+	* @param $node the loaded node
+	* @param $collection the machine name of your field collection
+	* 
+	* @return array of objects FieldCollectionItemEntity
+	*/
+	function getFieldCollection($node, $collection) {
+	  foreach($node->{$collection}[LANGUAGE_NONE] as $collectionItem) {
+	    $entity = entity_load('field_collection_item', array($collectionItem['value']));
+	    $fieldCollection[] = $entity[(int)$collectionItem['value']];
+	  }
+	  return $fieldCollection;
+	}
+	```
